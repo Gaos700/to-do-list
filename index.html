@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1>To Do List</h1>
+        </div>
+        <div class="section">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Nueva tarea...">
+                <button id="addTaskBtn">Agregar</button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col">
+                    <h3>Tareas</h3>
+                    <ul class="tasks-list" id="tasksList">
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Total abiertas</h3>
+                    <div id="openTasksCount">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
