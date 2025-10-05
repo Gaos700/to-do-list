@@ -18,8 +18,15 @@ function renderHtml(){
         checkbox.checked = tarea.completada;
         checkbox.addEventListener('change', ()=> {
             tarea.completada = !tarea.completada;
+            li.style.textDecoration = 'line-through'
             renderHtml();
         });
+
+        if (tarea.completada) {
+            li.style.textDecoration = 'line-through'
+        } else {
+            li.style.textDecoration = 'none'
+        };
     
     const span = document.createElement('span');
     span.textContent = tarea.descipcion;
